@@ -1,5 +1,8 @@
 package com.lwq.programStructure;
 
+import java.util.Random;
+import java.util.Scanner;
+
 //循环结构
 public class Circulation {
     public static void main(String[] args) {
@@ -81,5 +84,38 @@ public class Circulation {
             }while(i<3);
             System.out.println(i);
         }
+        {
+            System.out.println("-------输入密码案例----------");
+            /*
+            需求：系统密码是520，请用户不断的输入密码验证，验证不对输出：
+            密码错误，验证成功输出：欢迎进入系统，并停止程序。
+            * */
+            int psw=520;
+            Scanner sc=new Scanner(System.in);
+            do{
+                System.out.println("请输入密码");
+                int input=sc.nextInt();
+                if(input==psw){
+                    System.out.println("密码正确，欢迎进入系统");
+                    break;
+                }else{
+                    System.out.println("密码错误，请重新输入");
+                }
+            }while(true);
+        }
+        /*
+        * 跳转关键词：break，continue
+        * 其中，break： 跳出并结束当前所在循环的执行。
+        *      continue:  用于跳出当前循环的当次执行，进入下一次循环。
+         * */
+        {
+            System.out.println("-----随机数的生成-------");
+            Random r=new Random();
+            //nextInt(n) 功能只能生成: 0 至 n-1之间的随机数，不包含n。
+            int num=r.nextInt(10);
+            System.out.println(num);
+
+        }
+
     }
 }

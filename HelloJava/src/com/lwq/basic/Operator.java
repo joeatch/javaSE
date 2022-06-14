@@ -12,5 +12,8 @@ public class Operator {
         System.out.println(10/3);
         System.out.println(10*1.0/3);
         System.out.println(10%3);
+        System.out.println("--------------------");
+        int c=1;
+        System.out.println((++c)+(++c));
     }
 }
