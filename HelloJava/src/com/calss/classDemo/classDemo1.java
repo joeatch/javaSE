@@ -1,4 +1,4 @@
-package com.calss;
+package com.calss.classDemo;
 /*
 * 在Java中，必须先设计类，才能创建对象并使用。
 * 1.设计类

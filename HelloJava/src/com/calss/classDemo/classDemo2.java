@@ -1,4 +1,4 @@
-package com.calss;
+package com.calss.classDemo;
 
 /*面向对象编程的三大特征：封装、继承、多态
     封装：告诉我们，如何正确设计对象的属性和方法。
